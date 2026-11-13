@@ -48,11 +48,15 @@ public/               ← favicon (نجمة Exposia)
 
 ## النشر
 
-`.github/workflows/deploy-pages.yml` يبني الصفحة (typecheck + vite build) وينشرها على
-GitHub Pages عند أي دفع إلى `main`، مع `base` تلقائي من اسم المستودع. يلزم مرة واحدة
-فقط: **Settings → Pages → Source: GitHub Actions**.
-
-`.github/workflows/ci.yml` يشغّل typecheck + build على كل دفعة وطلب دمج.
+- **Vercel (مباشر الآن)**: [exposia-landing.vercel.app](https://exposia-landing.vercel.app) — مشروع
+  `exposia-landing` من فرع `main`. للتحديث التلقائي عند كل دفعة: ثبّت تطبيق GitHub الخاص بـ Vercel
+  على حساب `exposiaservices-dot` من لوحة Vercel (Settings → Integrations → GitHub) واربط المستودع،
+  أو اطلب نشرًا يدويًا عبر الـ connector.
+- **GitHub Pages**: `.github/workflows/deploy-pages.yml` يبني الصفحة (typecheck + vite build) وينشرها
+  عند أي دفع إلى `main` — يلزم تفعيلها **مرة واحدة يدويًا**: **Settings → Pages → Build and deployment
+  → Source: GitHub Actions** (إنشاء الموقع عبر API غير مسموح لتوكن الـ workflow؛ الخطأ المعروف
+  `Resource not accessible by integration`). بعد التفعيل تُشغَّل أي دفعة إلى `main` النشر تلقائيًا.
+- `.github/workflows/ci.yml` يشغّل typecheck + build على كل دفعة وطلب دمج.
 
 ## الترخيص
 
