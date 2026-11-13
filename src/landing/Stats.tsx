@@ -26,7 +26,7 @@ export function Stats() {
             <span className="slf-display-en text-[26px] font-extrabold leading-none tracking-tight text-white md:text-[30px]">
               {value}
             </span>
-            <span className="text-[11.5px] text-[#93a2cb]">{label}</span>
+            <span className="text-[11.5px] text-[#b593cb]">{label}</span>
           </div>
         ))}
       </div>

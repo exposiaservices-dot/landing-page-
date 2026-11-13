@@ -8,34 +8,34 @@
  * ------------------------------------------------------------------ */
 @theme {
   /* Deep navy neutral scale (cool, not gray) */
-  --color-ink-1000: #04060d;
-  --color-ink-950: #060a14;
-  --color-ink-900: #0a101f;
-  --color-ink-850: #0d1526;
-  --color-ink-800: #121c33;
-  --color-ink-750: #182342;
-  --color-ink-700: #223055;
-  --color-ink-600: #2f4070;
-  --color-ink-500: #45578a;
-  --color-ink-400: #64749f;
-  --color-ink-300: #8b98bd;
-  --color-ink-200: #b4bedd;
-  --color-ink-100: #d7ddf1;
-  --color-ink-50: #f2f5fd;
+  --color-ink-1000: #0a040d;
+  --color-ink-950: #0e0614;
+  --color-ink-900: #170a1f;
+  --color-ink-850: #1c0d26;
+  --color-ink-800: #261233;
+  --color-ink-750: #311842;
+  --color-ink-700: #412255;
+  --color-ink-600: #562f70;
+  --color-ink-500: #6f458a;
+  --color-ink-400: #88649f;
+  --color-ink-300: #a98bbd;
+  --color-ink-200: #cdb4dd;
+  --color-ink-100: #e6dbed;
+  --color-ink-50: #f6f1fd;
 
   /* Electric blue — the primary action color */
-  --color-signal: #4f7dff;
-  --color-signal-soft: #93b2ff;
-  --color-signal-dim: #16244d;
+  --color-signal: #e23c8a;
+  --color-signal-soft: #f070b8;
+  --color-signal-dim: #471031;
 
   /* Aurora accent set — decorative, used sparingly */
-  --color-aur-blue: #4f7dff;
-  --color-aur-violet: #8b5cf6;
-  --color-aur-cyan: #2fd4f6;
-  --color-aur-magenta: #e879f9;
+  --color-aur-blue: #6a0dff;
+  --color-aur-violet: #8b2fe8;
+  --color-aur-cyan: #e23c8a;
+  --color-aur-magenta: #f49ad1;
 
-  --font-ui: 'Inter', 'Tajawal', 'IBM Plex Sans Arabic', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-display: 'Space Grotesk', 'Tajawal', sans-serif;
+  --font-ui: 'Poppins', 'Tajawal', 'IBM Plex Sans Arabic', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Poppins', 'Tajawal', sans-serif;
 }
 
 @layer base {

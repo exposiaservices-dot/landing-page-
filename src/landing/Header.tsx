@@ -18,14 +18,14 @@ export function Header() {
         <a href="#top" className="group flex items-center gap-2.5" aria-label="Exposia — الرئيسية">
           <svg
             viewBox="0 0 24 24"
-            className="h-7 w-7 drop-shadow-[0_0_10px_rgba(139,120,255,0.9)] transition-transform duration-300 group-hover:scale-110"
+            className="h-7 w-7 drop-shadow-[0_0_10px_rgba(218,120,255,0.9)] transition-transform duration-300 group-hover:scale-110"
             aria-hidden
           >
             <defs>
               <linearGradient id="slf-logo-star" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stopColor="#8be9ff" />
-                <stop offset="0.5" stopColor="#6d6dff" />
-                <stop offset="1" stopColor="#a855f7" />
+                <stop offset="0" stopColor="#b48bff" />
+                <stop offset="0.5" stopColor="#6a0dff" />
+                <stop offset="1" stopColor="#e23c8a" />
               </linearGradient>
             </defs>
             <path d="M12 1.5l2.7 7.8 7.8 2.7-7.8 2.7L12 22.5l-2.7-7.8-7.8-2.7 7.8-2.7z" fill="url(#slf-logo-star)" />
@@ -39,7 +39,7 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-[13.5px] font-medium text-[#aab6d9] transition-colors duration-200 hover:text-white"
+              className="text-[13.5px] font-medium text-[#c7aad9] transition-colors duration-200 hover:text-white"
             >
               {item.label}
             </a>

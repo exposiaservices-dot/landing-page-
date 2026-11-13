@@ -29,8 +29,11 @@ npm run build      # حزمة ثابتة في dist/
 - **قنوات التواصل**: `src/landing/contact.ts` (البريد وsubject الرسالة) — حدّثها قبل النشر.
 - **الأرقام في `Stats.tsx`** و**أسماء الأعمال في `WorkShowcase.tsx`**: نصوص تسويقية
   أولية تُستبدل بأرقام وأعمال حقيقية عند توفّرها.
-- **الخطوط**: Google Fonts (Tajawal · IBM Plex Sans Arabic · Inter · Space Grotesk · Great Vibes)
-  محدَّدة في `index.html`، والأنماط في `src/landing/landing.css` (بادئة `slf-`).
+- **الهوية اللونية**: مأخوذة من Brand Kit المؤسسة — بنفسجي حيوي `#6A0DFF`، بنفسجي عميق
+  `#4B088E`، وردي `#E23C8A`، لافندر `#EAD9FF`؛ مع خط Poppins للنصوص اللاتينية وTajawal /
+  IBM Plex Sans Arabic للعربية وGreat Vibes لتوقيع *Ideas into Slides* — محدَّدة في
+  `index.html`، والمتغيرات في `src/styles/global.css`، والأنماط في `src/landing/landing.css`
+  (بادئة `slf-`). الحركات وتموجات الشفق كما هي.
 
 ## البنية
 

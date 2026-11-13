@@ -19,7 +19,7 @@ export function FinalCTA() {
             className="absolute inset-0"
             style={{
               background:
-                'linear-gradient(180deg, #04091a 0%, #0a1036 28%, #251252 52%, #3d1d6b 64%, #171a48 76%, #050a20 100%)',
+                'linear-gradient(180deg, #0b0216 0%, #1c0540 28%, #3a0a6e 52%, #4b088e 64%, #240846 76%, #0d0221 100%)',
             }}
           />
           {/* aurora ribbons */}
@@ -27,9 +27,9 @@ export function FinalCTA() {
           <div className="slf-ribbon slf-ribbon-violet" style={{ top: '10%', right: '-14%', width: '85%', height: 260, opacity: 0.9 }} />
           <div className="slf-ribbon slf-ribbon-cyan" style={{ top: '22%', left: '6%', width: '60%', height: 200, opacity: 0.55 }} />
           {/* light curtains */}
-          <i className="slf-curtain" style={{ left: '14%', ['--c1' as string]: 'rgba(232,121,249,0.55)', ['--c2' as string]: 'rgba(168,85,247,0.4)' }} />
-          <i className="slf-curtain" style={{ left: '38%', width: 110, opacity: 0.4, ['--c1' as string]: 'rgba(139,92,246,0.5)', ['--c2' as string]: 'rgba(59,130,246,0.35)' }} />
-          <i className="slf-curtain" style={{ left: '62%', width: 170, opacity: 0.5, ['--c1' as string]: 'rgba(249,168,212,0.45)', ['--c2' as string]: 'rgba(124,92,252,0.4)' }} />
+          <i className="slf-curtain" style={{ left: '14%', ['--c1' as string]: 'rgba(249,121,234,0.55)', ['--c2' as string]: 'rgba(233,85,247,0.4)' }} />
+          <i className="slf-curtain" style={{ left: '38%', width: 110, opacity: 0.4, ['--c1' as string]: 'rgba(217,92,246,0.5)', ['--c2' as string]: 'rgba(166,59,246,0.35)' }} />
+          <i className="slf-curtain" style={{ left: '62%', width: 170, opacity: 0.5, ['--c1' as string]: 'rgba(249,168,211,0.45)', ['--c2' as string]: 'rgba(213,92,252,0.4)' }} />
           {/* horizon light */}
           <div className="slf-horizon-glow" />
           {/* stars */}
@@ -40,10 +40,10 @@ export function FinalCTA() {
         {/* ---- content ---- */}
         <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 pb-[330px] pt-24 text-center md:pb-[400px] md:pt-28">
           <Reveal>
-            <h2 className="slf-display max-w-3xl text-[36px] font-extrabold leading-[1.3] text-white drop-shadow-[0_0_44px_rgba(200,160,255,0.35)] sm:text-[46px] md:text-[52px]">
+            <h2 className="slf-display max-w-3xl text-[36px] font-extrabold leading-[1.3] text-white drop-shadow-[0_0_44px_rgba(243,160,255,0.35)] sm:text-[46px] md:text-[52px]">
               جاهز لعرضٍ يليق بفكرتك؟
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-[15.5px] leading-8 text-[#c3bce4] md:text-[17px]">
+            <p className="mx-auto mt-4 max-w-xl text-[15.5px] leading-8 text-[#dabce4] md:text-[17px]">
               تواصل معنا لمناقشة مشروعك — نستمع، نفهم، ثم نصمم.
             </p>
             <a href={contactMailto()} className="slf-btn slf-btn-light mt-9 inline-flex h-12 items-center gap-2 px-8 text-[15.5px]">
@@ -64,12 +64,12 @@ export function FinalCTA() {
           <svg viewBox="0 0 1440 300" preserveAspectRatio="none" className="block h-[180px] w-full md:h-[230px]" style={{ marginBottom: -1 }}>
             <defs>
               <linearGradient id="mtn-far" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#2c1d5e" />
-                <stop offset="100%" stopColor="#120c34" />
+                <stop offset="0%" stopColor="#4f1d5e" />
+                <stop offset="100%" stopColor="#290c34" />
               </linearGradient>
               <linearGradient id="mtn-near" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#151038" />
-                <stop offset="100%" stopColor="#050518" />
+                <stop offset="0%" stopColor="#2d1038" />
+                <stop offset="100%" stopColor="#120518" />
               </linearGradient>
             </defs>
             <path
@@ -87,18 +87,18 @@ export function FinalCTA() {
             <div className="slf-horizon-line" style={{ top: -1 }} />
             {/* mirrored silhouette */}
             <svg viewBox="0 0 1440 300" preserveAspectRatio="none" className="absolute inset-x-0 top-0 block h-[100px] w-full scale-y-[-1] opacity-20 md:h-[130px]" style={{ maskImage: 'linear-gradient(180deg, transparent 0%, black 75%)', WebkitMaskImage: 'linear-gradient(180deg, transparent 0%, black 75%)' }}>
-              <path fill="#241a52" d="M0 300 L0 96 L60 46 L130 130 L210 78 L300 160 L390 120 L490 196 L590 224 L720 238 L850 226 L950 190 L1030 128 L1120 200 L1210 108 L1300 176 L1380 130 L1440 170 L1440 300 Z" />
+              <path fill="#441a52" d="M0 300 L0 96 L60 46 L130 130 L210 78 L300 160 L390 120 L490 196 L590 224 L720 238 L850 226 L950 190 L1030 128 L1120 200 L1210 108 L1300 176 L1380 130 L1440 170 L1440 300 Z" />
             </svg>
             {/* sky reflection */}
             <div
               className="absolute inset-0"
-              style={{ background: 'linear-gradient(180deg, rgba(190,90,220,0.28) 0%, rgba(90,50,160,0.2) 30%, rgba(10,8,34,0.75) 100%)' }}
+              style={{ background: 'linear-gradient(180deg, rgba(220,90,214,0.28) 0%, rgba(142,50,160,0.2) 30%, rgba(26,8,34,0.75) 100%)' }}
             />
             <i className="slf-water-lines absolute inset-0" />
             {/* reflected light column */}
             <i
               className="absolute"
-              style={{ top: '-12%', left: '50%', translate: '-50% 0', width: '46%', height: '110%', background: 'radial-gradient(46% 58% at 50% 34%, rgba(240,150,255,0.32), rgba(124,92,252,0.18) 55%, transparent 75%)', filter: 'blur(18px)', mixBlendMode: 'screen' }}
+              style={{ top: '-12%', left: '50%', translate: '-50% 0', width: '46%', height: '110%', background: 'radial-gradient(46% 58% at 50% 34%, rgba(255,150,243,0.32), rgba(213,92,252,0.18) 55%, transparent 75%)', filter: 'blur(18px)', mixBlendMode: 'screen' }}
             />
           </div>
         </div>
@@ -118,8 +118,8 @@ export function FinalCTA() {
         <div
           aria-hidden
           dir="ltr"
-          className="slf-script absolute bottom-20 right-10 z-10 hidden rotate-[-8deg] text-right text-[40px] leading-[0.95] text-[#a5ecff] lg:block"
-          style={{ textShadow: '0 0 26px rgba(110,220,255,0.55), 0 0 70px rgba(110,160,255,0.35)' }}
+          className="slf-script absolute bottom-20 right-10 z-10 hidden rotate-[-8deg] text-right text-[40px] leading-[0.95] text-[#d1b2f2] lg:block"
+          style={{ textShadow: '0 0 26px rgba(182,110,255,0.55), 0 0 70px rgba(194,110,255,0.35)' }}
         >
           Ideas
           <br />

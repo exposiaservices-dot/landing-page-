@@ -25,7 +25,7 @@ export function TemplateShowcase({ onOpen }: { onOpen: () => void }) {
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0"
-            style={{ background: 'radial-gradient(46% 70% at 18% 0%, rgba(99,102,241,0.12), transparent 65%), radial-gradient(40% 60% at 90% 100%, rgba(139,92,246,0.1), transparent 65%)' }}
+            style={{ background: 'radial-gradient(46% 70% at 18% 0%, rgba(194,99,241,0.12), transparent 65%), radial-gradient(40% 60% at 90% 100%, rgba(217,92,246,0.1), transparent 65%)' }}
           />
 
           <div className="relative grid gap-10 lg:grid-cols-[270px_1fr] lg:gap-12">
@@ -34,13 +34,13 @@ export function TemplateShowcase({ onOpen }: { onOpen: () => void }) {
               <h2 className="slf-display text-[28px] font-extrabold leading-snug text-white md:text-[32px]">
                 قوالب مصممة لكل فكرة
               </h2>
-              <p className="mt-3 text-[13.5px] leading-7 text-[#93a2cb]">
+              <p className="mt-3 text-[13.5px] leading-7 text-[#b593cb]">
                 اختر من مكتبة القوالب الاحترافية المصممة لتناسب جميع الأفكار والاحتياجات.
               </p>
               <button
                 type="button"
                 onClick={onOpen}
-                className="mt-6 inline-flex items-center gap-2 self-start text-[13px] font-semibold text-[#aebadd] transition-colors hover:text-white"
+                className="mt-6 inline-flex items-center gap-2 self-start text-[13px] font-semibold text-[#cbaedd] transition-colors hover:text-white"
               >
                 تغطي كل الأفكار
                 <ArrowLeft className="h-3.5 w-3.5" aria-hidden />
@@ -72,9 +72,9 @@ export function TemplateShowcase({ onOpen }: { onOpen: () => void }) {
                     <div dir="ltr" className="flex items-center justify-between gap-2 px-1.5 pb-1 pt-3">
                       <div>
                         <p className="slf-display-en text-[15px] font-bold tracking-tight text-white">{name}</p>
-                        <p className="mt-0.5 text-[10.5px] text-[#8d9cc6]">{sub}</p>
+                        <p className="mt-0.5 text-[10.5px] text-[#af8dc6]">{sub}</p>
                       </div>
-                      <span className="slf-card-arrow grid h-8 w-8 shrink-0 place-items-center rounded-full border border-white/12 bg-white/[0.06] text-[#c9d6ff]">
+                      <span className="slf-card-arrow grid h-8 w-8 shrink-0 place-items-center rounded-full border border-white/12 bg-white/[0.06] text-[#e8d1f7]">
                         <ArrowRight className="h-3.5 w-3.5" strokeWidth={2.2} aria-hidden />
                       </span>
                     </div>

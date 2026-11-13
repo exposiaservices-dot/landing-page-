@@ -19,7 +19,7 @@ export function Hero() {
         />
         <div
           className="slf-glow"
-          style={{ top: '30%', left: '-6%', width: '30%', height: 340, background: 'radial-gradient(closest-side, rgba(232,121,249,0.16), transparent)' }}
+          style={{ top: '30%', left: '-6%', width: '30%', height: 340, background: 'radial-gradient(closest-side, rgba(249,121,234,0.16), transparent)' }}
         />
       </div>
 
@@ -27,11 +27,11 @@ export function Hero() {
         {/* ---- copy (right in RTL) ---- */}
         <Reveal className="lg:order-1">
           <h1 className="slf-display text-[42px] font-extrabold leading-[1.3] text-white sm:text-[52px] lg:text-[54px] xl:text-[58px]">
-            <span className="block drop-shadow-[0_0_28px_rgba(190,210,255,0.25)]">نصنع عروضًا تقديمية</span>
-            <span className="slf-grad-cyan block drop-shadow-[0_0_36px_rgba(94,180,255,0.35)]">تُقنع قبل أن تُشرح.</span>
+            <span className="block drop-shadow-[0_0_28px_rgba(227,199,246,0.25)]">نصنع عروضًا تقديمية</span>
+            <span className="slf-grad-cyan block drop-shadow-[0_0_36px_rgba(179,94,255,0.35)]">تُقنع قبل أن تُشرح.</span>
           </h1>
 
-          <p className="mt-6 max-w-lg text-[15.5px] leading-8 text-[#9aa7cc] md:text-[16.5px]">
+          <p className="mt-6 max-w-lg text-[15.5px] leading-8 text-[#b89acc] md:text-[16.5px]">
             Exposia استوديو متخصص في تصميم العروض التقديمية — نحوّل أفكاركم إلى قصص بصرية مؤثرة
             للشركات والمؤسسات ورواد الأعمال.
           </p>
