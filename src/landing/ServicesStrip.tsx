@@ -1,0 +1,36 @@
+/**
+ * ServicesStrip — the thin futuristic row under the hero, sitting directly
+ * on the background (no panel): the four core Exposia services —
+ * Presentation Design · Pitch Decks · Visual Identity · Motion Design.
+ */
+import { Film, Lightbulb, Palette, PenLine } from 'lucide-react'
+import { Reveal } from './Reveal'
+
+const SERVICES = [
+  { icon: PenLine, label: 'Presentation Design', tint: 'rgba(233,85,247,0.7)' },
+  { icon: Lightbulb, label: 'Pitch Decks', tint: 'rgba(186,79,255,0.7)' },
+  { icon: Palette, label: 'Visual Identity', tint: 'rgba(132,34,238,0.7)' },
+  { icon: Film, label: 'Motion Design', tint: 'rgba(217,92,246,0.7)' },
+]
+
+export function ServicesStrip() {
+  return (
+    <section id="services" className="relative mx-auto max-w-6xl scroll-mt-24 px-6 pb-12 pt-2">
+      <Reveal>
+        <div dir="ltr" className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 xl:justify-between">
+          {SERVICES.map(({ icon: Icon, label, tint }) => (
+            <div key={label} className="flex items-center gap-3">
+              <span
+                className="grid h-8 w-8 place-items-center rounded-lg border border-white/12 bg-white/[0.04]"
+                style={{ boxShadow: `0 0 16px -6px ${tint}, inset 0 1px 0 rgba(255,255,255,0.08)` }}
+              >
+                <Icon className="h-[15px] w-[15px] text-[#e8d1f7]" strokeWidth={2} aria-hidden />
+              </span>
+              <span className="slf-display-en text-[13px] font-medium text-[#d1b7e2]">{label}</span>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+    </section>
+  )
+}

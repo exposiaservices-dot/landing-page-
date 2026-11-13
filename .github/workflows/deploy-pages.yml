@@ -27,10 +27,7 @@ jobs:
       # The same gate the project is developed against.
       - run: npx tsc -p tsconfig.json --noEmit
       - run: npx vite build --base="/${{ github.event.repository.name }}/"
-      # Pages has no SPA rewrite: index.html copied to 404.html makes /edit/:id deep links work.
-      - run: |
-          cp dist/index.html dist/404.html
-          touch dist/.nojekyll
+      - run: touch dist/.nojekyll
       - uses: actions/configure-pages@v5
         # Self-enable Pages (build_type=workflow) on first deploy — the sandbox
         # token can't call the admin API, but the workflow's pages:write can.

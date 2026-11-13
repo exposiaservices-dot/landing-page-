@@ -8,15 +8,3 @@ dist-ssr
 .vite
 coverage
 *.tsbuildinfo
-
-# local harnesses
-.tmp-verify/
-.tmp-hand/
-
-# raw hand photo plates (chroma-key sources for `npm run assets:hands`) — never shipped
-.hand-src/
-
-model/data/*.jsonl
-model/checkpoints/
-model/reports/
-.tmp-verify/

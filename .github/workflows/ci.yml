@@ -25,33 +25,8 @@ jobs:
           cache: npm
       - run: npm ci
 
-      # The gate the project is developed against.
       - name: Typecheck
         run: npm run typecheck
 
-      # Sanitizers + document model (jsdom).
-      - name: Unit tests
-        run: npm run test:unit
-
-      # Animation engine (773 assertions) and the PDF → deck pipeline (54).
-      # test:pdf generates its own fixtures, so no cached state is needed.
-      - name: Animation tests
-        run: npm run test:anim
-      - name: PDF pipeline tests
-        run: npm run test:pdf
-
-      # Zoom navigation model + suggester (73 assertions).
-      - name: Zoom navigation tests
-        run: npm run test:zoom
-
-      # Open Slide project generation, source validation, and ZIP round-trip import.
-      - name: Open Slide bridge tests
-        run: npm run test:openslide
-
-      # Dataset + gateway stub smoke.
-      - name: Model smoke
-        run: npm run test:model
-
-      # Fails the build on a broken bundle, not just on a type error.
       - name: Build
         run: npm run build

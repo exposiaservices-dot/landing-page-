@@ -36,15 +36,15 @@ export function AuroraBackground() {
       {/* Soft radial light fields */}
       <div
         className="slf-glow"
-        style={{ top: '-12%', insetInlineStart: '18%', width: '56%', height: 420, background: 'radial-gradient(closest-side, rgba(59,130,246,0.30), transparent)' }}
+        style={{ top: '-12%', insetInlineStart: '18%', width: '56%', height: 420, background: 'radial-gradient(closest-side, rgba(166,59,246,0.30), transparent)' }}
       />
       <div
         className="slf-glow"
-        style={{ top: '30%', insetInlineEnd: '-8%', width: '44%', height: 480, background: 'radial-gradient(closest-side, rgba(139,92,246,0.3), transparent)', animationDelay: '-7s' }}
+        style={{ top: '30%', insetInlineEnd: '-8%', width: '44%', height: 480, background: 'radial-gradient(closest-side, rgba(217,92,246,0.3), transparent)', animationDelay: '-7s' }}
       />
       <div
         className="slf-glow"
-        style={{ top: '64%', insetInlineStart: '-6%', width: '42%', height: 460, background: 'radial-gradient(closest-side, rgba(168,85,247,0.18), transparent)', animationDelay: '-3s' }}
+        style={{ top: '64%', insetInlineStart: '-6%', width: '42%', height: 460, background: 'radial-gradient(closest-side, rgba(233,85,247,0.18), transparent)', animationDelay: '-3s' }}
       />
 
       {/* Stars — two layers, subtle twinkle */}

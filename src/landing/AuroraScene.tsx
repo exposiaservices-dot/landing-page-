@@ -10,24 +10,24 @@ import type { ReactNode } from 'react'
 type Variant = 'blue' | 'purple' | 'pink' | 'teal'
 
 const SKY: Record<Variant, [string, string, string]> = {
-  blue: ['#0a1233', '#152054', '#1a1040'],
-  purple: ['#150f38', '#2b1762', '#111a4c'],
-  pink: ['#1d0f3d', '#3d1662', '#141b4e'],
-  teal: ['#081431', '#102154', '#101a44'],
+  blue: ['#240a33', '#3d1554', '#351040'],
+  purple: ['#2d0f38', '#521762', '#36114c'],
+  pink: ['#340f3d', '#5c1662', '#39144e'],
+  teal: ['#200831', '#391054', '#301044'],
 }
 
 const RIBBONS: Record<Variant, [string, string, string]> = {
-  blue: ['rgba(56,150,248,0.5)', 'rgba(99,102,241,0.45)', 'rgba(125,232,247,0.75)'],
-  purple: ['rgba(139,92,246,0.6)', 'rgba(59,130,246,0.4)', 'rgba(196,181,253,0.7)'],
-  pink: ['rgba(232,121,249,0.5)', 'rgba(168,85,247,0.55)', 'rgba(249,168,212,0.65)'],
-  teal: ['rgba(45,212,191,0.38)', 'rgba(34,211,238,0.5)', 'rgba(125,232,247,0.65)'],
+  blue: ['rgba(160,56,248,0.5)', 'rgba(194,99,241,0.45)', 'rgba(183,125,247,0.75)'],
+  purple: ['rgba(217,92,246,0.6)', 'rgba(166,59,246,0.4)', 'rgba(231,191,243,0.7)'],
+  pink: ['rgba(249,121,234,0.5)', 'rgba(233,85,247,0.55)', 'rgba(249,168,211,0.65)'],
+  teal: ['rgba(120,45,212,0.38)', 'rgba(132,34,238,0.5)', 'rgba(183,125,247,0.65)'],
 }
 
 const MOUNT: Record<Variant, [string, string]> = {
-  blue: ['rgba(14,22,54,0.94)', '#070d24'],
-  purple: ['rgba(32,21,68,0.94)', '#0c0a28'],
-  pink: ['rgba(40,21,68,0.94)', '#0e0a2a'],
-  teal: ['rgba(13,25,54,0.94)', '#061024'],
+  blue: ['rgba(39,14,54,0.94)', '#190724'],
+  purple: ['rgba(57,21,68,0.94)', '#1f0a28'],
+  pink: ['rgba(61,21,68,0.94)', '#210a2a'],
+  teal: ['rgba(37,13,54,0.94)', '#180624'],
 }
 
 const RIDGE_BACK = 'M0 150 L0 92 L44 44 L82 90 L122 32 L164 88 L206 50 L248 100 L292 58 L336 98 L400 60 L400 150 Z'
@@ -79,7 +79,7 @@ export function AuroraScene({ variant = 'blue', children, water = true, classNam
         <div className="absolute inset-x-0 bottom-0 h-[25%]">
           <div
             className="absolute inset-0"
-            style={{ background: `linear-gradient(180deg, ${r0} 0%, rgba(4,8,24,0.2) 42%, rgba(2,5,16,0.72) 100%)`, opacity: 0.35 }}
+            style={{ background: `linear-gradient(180deg, ${r0} 0%, rgba(16,4,24,0.2) 42%, rgba(11,2,16,0.72) 100%)`, opacity: 0.35 }}
           />
           <i className="slf-water-lines absolute inset-0" />
           <i
