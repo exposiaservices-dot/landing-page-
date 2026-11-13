@@ -1,16 +1,17 @@
 /**
- * FinalCTA — the visual climax, matching the reference: a cinematic aurora
- * valley — dark blue-purple mountains framing both sides, pink/violet
- * curtains and horizon light, reflective water below. Centered heading +
- * light glass "ابدأ الآن" pill, faint templates link, a vertical Scroll
- * hint on the left edge and a handwritten "Ideas into Slides" signature.
+ * FinalCTA — the visual climax: a cinematic aurora valley — dark
+ * blue-purple mountains framing both sides, pink/violet curtains and
+ * horizon light, reflective water below. Centered heading + light glass
+ * "اطلب عرض سعر" pill, faint work link, a vertical Scroll hint on the
+ * edge and a handwritten "Ideas into Slides" signature.
  */
 import { ArrowLeft } from 'lucide-react'
+import { contactMailto } from './contact'
 import { Reveal } from './Reveal'
 
-export function FinalCTA({ onStart }: { onStart: () => void }) {
+export function FinalCTA() {
   return (
-    <section className="relative mt-8 overflow-hidden">
+    <section id="contact" className="relative mt-8 scroll-mt-24 overflow-hidden">
       <div className="relative flex min-h-[94vh] flex-col">
         {/* ---- sky ---- */}
         <div aria-hidden className="pointer-events-none absolute inset-0">
@@ -40,18 +41,18 @@ export function FinalCTA({ onStart }: { onStart: () => void }) {
         <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 pb-[330px] pt-24 text-center md:pb-[400px] md:pt-28">
           <Reveal>
             <h2 className="slf-display max-w-3xl text-[36px] font-extrabold leading-[1.3] text-white drop-shadow-[0_0_44px_rgba(200,160,255,0.35)] sm:text-[46px] md:text-[52px]">
-              ابدأ رحلتك الإبداعية الآن
+              جاهز لعرضٍ يليق بفكرتك؟
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-[15.5px] leading-8 text-[#c3bce4] md:text-[17px]">
-              انضم إلى آلاف المبدعين الذين يحوّلون أفكارهم إلى عروض استثنائية
+              تواصل معنا لمناقشة مشروعك — نستمع، نفهم، ثم نصمم.
             </p>
-            <button type="button" onClick={onStart} className="slf-btn slf-btn-light mt-9 h-12 px-8 text-[15.5px]">
-              ابدأ الآن
+            <a href={contactMailto()} className="slf-btn slf-btn-light mt-9 inline-flex h-12 items-center gap-2 px-8 text-[15.5px]">
+              اطلب عرض سعر
               <ArrowLeft className="h-4 w-4" strokeWidth={2.4} aria-hidden />
-            </button>
+            </a>
             <div>
-              <a href="#templates" className="mt-5 inline-block text-[12.5px] text-white/40 transition-colors hover:text-white/80">
-                أو استكشف القوالب الجاهزة
+              <a href="#work" className="mt-5 inline-block text-[12.5px] text-white/40 transition-colors hover:text-white/80">
+                أو تصفح أعمالنا
               </a>
             </div>
           </Reveal>

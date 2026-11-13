@@ -1,12 +1,12 @@
 /**
  * Stats — one premium glass strip with thin dividers, white bold values
- * (+500 · +50K · 99% · 3x) and muted labels, as in the reference.
+ * and muted labels — Exposia's delivered work at a glance.
  */
 const STATS = [
-  { value: '+500', label: 'قالب احترافي' },
-  { value: '+50K', label: 'مستخدم سعيد' },
-  { value: '99%', label: 'دقة في التحليل' },
-  { value: '3x', label: 'أسرع في التصميم' },
+  { value: '+250', label: 'مشروع مُسلَّم' },
+  { value: '+120', label: 'عميل ومؤسسة' },
+  { value: '98%', label: 'رضا العملاء' },
+  { value: '+8', label: 'سنوات خبرة' },
 ]
 
 export function Stats() {

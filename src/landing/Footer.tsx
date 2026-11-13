@@ -1,6 +1,8 @@
 /**
  * Footer — quiet, lightweight closer under the aurora landscape.
  */
+import { CONTACT } from './contact'
+
 export function Footer() {
   return (
     <footer className="relative z-10 border-t border-white/6 bg-[#02060f]/80 py-8">
@@ -16,20 +18,30 @@ export function Footer() {
             </svg>
           </span>
           <span className="slf-display-en text-[15px] font-bold tracking-tight text-white">
-            Slide<span className="slf-grad">Flow</span>
+            Exp<span className="slf-grad">osia</span>
           </span>
-          <span className="text-[12px] text-[#7d8bb2]">— صمّم، صدِّر، اعرض.</span>
+          <span className="text-[12px] text-[#7d8bb2]">— نصنع عروضًا تُقنع.</span>
         </div>
 
-        <nav dir="ltr" className="flex items-center gap-6" aria-label="Footer">
-          {['Features', 'Templates', 'Pricing', 'Blog'].map((label) => (
-            <a key={label} href="#" onClick={(e) => e.preventDefault()} className="slf-display-en text-[12.5px] text-[#7d8bb2] transition-colors hover:text-white">
-              {label}
+        <nav className="flex items-center gap-6" aria-label="روابط التذييل">
+          {[
+            { label: 'خدماتنا', href: '#services' },
+            { label: 'أعمالنا', href: '#work' },
+            { label: 'كيف نعمل', href: '#process' },
+            { label: 'تواصل معنا', href: '#contact' },
+          ].map((item) => (
+            <a key={item.href} href={item.href} className="text-[12.5px] text-[#7d8bb2] transition-colors hover:text-white">
+              {item.label}
             </a>
           ))}
         </nav>
 
-        <p className="text-[12px] text-[#66739c]">© 2026 SlideFlow — جميع الحقوق محفوظة</p>
+        <div className="flex items-center gap-4">
+          <a href={`mailto:${CONTACT.email}`} className="text-[12px] text-[#7d8bb2] transition-colors hover:text-white" dir="ltr">
+            {CONTACT.email}
+          </a>
+          <p className="text-[12px] text-[#66739c]">© 2026 Exposia — جميع الحقوق محفوظة</p>
+        </div>
       </div>
     </footer>
   )
